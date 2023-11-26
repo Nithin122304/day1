@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .md {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+      }
+      .madara {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        background-color: yellow;
+        background-image: url("data:image/jpeg;base64,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");
+        background-repeat: no-repeat;
+        background-size: 2846px 558px;
+      }
+      img {
+        background-position: left;
+        height: 480px;
+        width: 800px;
+      }
+      .p1 {
+        position: absolute;
+        top: 153px;
+        left: 850px;
+        right: 60px;
+        text-align: justify;
+        color: black;
+      }
+      .p2 {
+        position: absolute;
+        bottom: -280px;
+        left: 850px;
+        right: 60px;
+        text-align: justify;
+      }
+      .p3 {
+        position: absolute;
+        bottom: -886px;
+        left: 850px;
+        right: 60px;
+        text-align: justify;
+      }
+      .naruto {
+        background-color: rgb(238, 255, 0);
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        background-image: url("https://anysigns.ca/wp-content/uploads/sage-mode-eyes-1.jpg");
+        background-repeat: no-repeat;
+        background-size: 2700px 630px;
+      }
+      .sasuke {
+        background-color: aquamarine;
+
+        flex-direction: column;
+        border: 1px solid black;
+        background-image: url("data:image/jpeg;base64,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");
+        background-repeat: no-repeat;
+        background-size: 2800px 600px;
+      }
+
+      .pain {
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBZoT7K4DPWl6CL7xcDzZve6rCL3gL6ZLPAw&usqp=CAU");
+        background-repeat: no-repeat;
+        background-size: 2735px 634px;
+      }
+      .p4 {
+        position: absolute;
+        top: 1900px;
+        left: 850px;
+        right: 60px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <center><h1>MAIN CHARACTERS OF NARUTO</h1></center>
+      <div class="madara">
+        <center><h1>MADARA UCHIHA</h1></center>
+        <img
+          src="https://w0.peakpx.com/wallpaper/452/352/HD-wallpaper-madara-uchiha-anime.jpg"
+          alt=""
+        />
+        <p class="p1">
+          Madara is able to use multiple chakra natures. As an Uchiha, Madara is
+          able to use Fire style jutsu. Madara's fire ball jutsu can encompass a
+          large distances and can swallow many opponents. Madara can also use
+          the Wood style jutsu since he implanted Hashirama's cell into his
+          body.Madara Uchiha (Japanese: うちは マダラ, Hepburn: Uchiha Madara)
+          is a main antagonist manga and anime character in the Naruto series
+          created by Masashi Kishimoto. He appears for the first time in "Part
+          II" of the manga and the Shippuden anime adaptation, as a major
+          antagonist. He, along with its first Hokage Hashirama Senju, is one of
+          the co-founders of Konohagakure (Japanese: 木ノ葉隠れの里, Hepburn:
+          Konohagakure no Sato) village from the ninja world. Their power
+          conflict over how to run the village, as well as the long-term feud
+          between clans, leads to Madara's death. However, it is revealed later
+          that Madara had used a man named Obito Uchiha as his agent. He
+          transplants his Rinnegan (輪廻眼, lit. "Saṃsāra Eye") eye power into a
+          child named Nagato, a member of the terrorist organization Akatsuki,
+          to be preserved for his eventual revival years later. During most of
+          the series, Obito uses Madara's name until a criminal named Kabuto
+          Yakushi reanimates the real Madara who becomes one of the primary
+          antagonists alongside Obito Uchiha during the Fourth Great Shinobi
+          World War storyline. Madara has appeared in several pieces of Naruto
+          media, including a Boruto feature film. Many Naruto video games have
+          featured him as a playable character. Kishimoto created the character
+          to provide a strong villain in the series' final arc who would face
+          the series' protagonist, Naruto Uzumaki. This confrontation would be
+          different from that with previous enemies and result in more of a
+          focus on fight scenes. Merchandise has been released in Madara's
+          likeness, including keychains, plush dolls, and figurines. In the
+          Japanese anime, Naoya Uchida voices Madara, while Go Inoue voices him
+          as a child. In the English version, Neil Kaplan provides Madara's
+          voice with Xander Mobus voicing him as a child. Critics have commented
+          on his role as an antagonist in the series; some have placed him on
+          top all-time anime villains lists, while others have criticized his
+          effectiveness. Nevertheless, Madara's background was well-received for
+          how integral his story is to the series' scenario.
+        </p>
+      </div>
+      <div class="naruto">
+        <center><h1>NARUTO UZUMAKI</h1></center>
+        <img
+          src="https://cdn.dribbble.com/users/3205692/screenshots/16124396/media/f7c9eee4ce9754654f986d9a77b703c0.jpg"
+          alt=""
+        />
+        <p class="p2">
+          Naruto Uzumaki (Japanese: うずまき ナルト, Hepburn: Uzumaki Naruto)
+          (/ˈnɑːrutoʊ/) is the titular protagonist of the manga Naruto, created
+          by Masashi Kishimoto. He is a ninja from the fictional Hidden Leaf
+          Village (Japanese: 木ノ葉隠れ, Hepburn: konohagakure). As a boy,
+          Naruto is ridiculed and ostracized on account of the Nine-Tailed Demon
+          Fox—a malevolent creature that attacked Konohagakure—that was sealed
+          away in his body. Despite this, he aspires to become his village's
+          leader, the Hokage, in order to receive their approval. His carefree,
+          optimistic, and boisterous personality enables him to befriend other
+          Konohagakure ninja, as well as ninja from other villages. Naruto
+          appears in the series' films and in other media related to the
+          franchise, including video games and original video animations (OVA),
+          as well as the sequel Boruto: Naruto Next Generations, where he is the
+          Hokage, and his son, Boruto Uzumaki, is the protagonist. When creating
+          Naruto for the initial part of the series, Kishimoto kept the
+          character "simple and stupid", while giving him many attributes of an
+          ideal hero. Kishimoto gave Naruto a dark side by adding tragedy to the
+          character's past. He has revised Naruto's image many times, providing
+          the character with simple clothes to fit the young demography.
+          Kishimoto changed his design for Part II of the storyline, which
+          starts two-and-a-half years after Part I. Naruto is voiced by Junko
+          Takeuchi in the original animated series and Maile Flanagan in the
+          English adaptations. Merchandise based on Naruto includes figurines
+          and keychains. Naruto's character development has been praised by
+          anime and manga publications and has drawn scholarly attention.
+          Although some initially saw him as a typical manga and anime
+          protagonist comparable to those in other shōnen manga, others have
+          praised his personality and character development as he avoids
+          stereotypes typically seen in similar media. The character has also
+          been the subject of researches in literature, making him stand out in
+          fiction based on his traits and growth.
+        </p>
+      </div>
+      <div class="sasuke">
+        <center><h1>SASUKE</h1></center>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtCUSYVWYOBhueBq5v_egPJLo7tr49ZR43w&usqp=CAU"
+          alt=""
+        />
+        <p class="p3">
+          Sasuke Uchiha (Japanese: うちは サスケ, Hepburn: Uchiha Sasuke)
+          (/ˈsɑːskeɪ/) is a fictional character in the Naruto manga and anime
+          franchise created by Masashi Kishimoto. Sasuke belongs to the Uchiha
+          clan, a notorious ninja family, and one of the most powerful, allied
+          with Konohagakure (木ノ葉隠れの里, English version: "Hidden Leaf
+          Village"). Most of its members were massacred by Sasuke's older
+          brother, Itachi Uchiha, before the series began, leaving Sasuke one of
+          the few living. Despite becoming empathetic toward his teammates
+          Naruto Uzumaki and Sakura Haruno, Sasuke's feelings of powerlessness
+          force him to abandon his friends and his home in his quest to become
+          stronger, and to find Orochimaru. Sasuke appears in several of the
+          series' animated feature films and related media, including video
+          games, original video animations (OVAs), and Boruto: Naruto the Movie
+          (2015) and its manga sequel, Boruto: Naruto Next Generations (2016),
+          in which he is depicted as a vigilante supporting his village and a
+          mentor to Naruto's son Boruto Uzumaki. Kishimoto conceived Sasuke as a
+          rival of the series' title character Naruto Uzumaki. Despite Sasuke's
+          dark character development later in the story, Kishimoto avoided
+          portraying him as a villain; he found designing the character
+          challenging and had difficulty creating a suitable look for him.
+          Nonetheless, Kishimoto has grown to enjoy drawing him. In the manga's
+          animated adaptations, Sasuke was voiced by Noriaki Sugiyama in
+          Japanese and Yuri Lowenthal in English. Sasuke's character has
+          received mixed responses from anime and manga publications. His
+          impressive fighting skills, plot contribution, and rivalry with Naruto
+          Uzumaki received some praise, but he was criticized as a stereotypical
+          rival in the mold of similar characters from other shōnen manga and as
+          exhibiting a cold personality. Nevertheless, Sasuke's characterization
+          in latter parts of the story and more mature personality in the Boruto
+          sequel earned further positive comments. Sasuke has also placed highly
+          in Naruto reader popularity polls and has also been the subject of
+          studies by scholars. Character-based merchandise, including action
+          figures and key chains, have been released.
+        </p>
+      </div>
+      <div class="pain">
+        <center><h1>NAGATO (PAIN)</h1></center>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/016/724/121/non_2x/pain-tendo-akatsuki-free-vector.jpg"
+          alt=""
+        />
+        <p class="p4">
+          Nagato (Japanese: 長門), known primarily under the alias of Pain
+          (ペイン, Pein), is a fictional character in the manga and anime series
+          Naruto created by Masashi Kishimoto. Nagato is the figurehead leader
+          of the Akatsuki who wishes to capture the tailed beasts sealed into
+          various people around the shinobi world. After acquiring and sealing
+          most of the beasts within a Gedo statue, Nagato's advisor advises him
+          to capture the Nine-Tailed Demon Fox sealed inside the series'
+          protagonist, Naruto Uzumaki (whom he turns out to be related to).
+          Before leaving to capture Naruto, Nagato engages in a mortal battle
+          with his former mentor, Jiraiya. His past as a war orphan, and his
+          loss of his best friend are explored. Due to his traumatic
+          experiences, which stemmed from human conflict, Nagato aims to create
+          a new world, free from the chaos of war. Nagato also appears in the
+          series' video games. Nagato was conceived by Kishimoto as a villain, a
+          victim of war, who would show Naruto the impact of world wars,
+          something Kishimoto aimed to explore throughout the series. While
+          Nagato does not fight in the story, he uses a group of corpses known
+          as "The Six Paths of Pain" (ペイン六道, Pein Rikudō). All of them were
+          given elaborate designs with multiple piercings across their bodies to
+          reinforce the idea that despite his calm demeanor, Nagato is a
+          dangerous person. Critical response to Nagato's character has been
+          generally positive, praising the chaos he brings to the story,
+          including the murder of Jiraiya and the destruction of Konoha itself
+          while chasing Naruto. His eventual fight against Naruto has been
+          regarded as one of the best battles in the entire series. This is due
+          not only to the techniques used by both fighters, but because of their
+          interactions in relation to the chaos of wars. Because of this,
+          Kishimoto was able to bring more depth to a series aimed at a young
+          demographic.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
